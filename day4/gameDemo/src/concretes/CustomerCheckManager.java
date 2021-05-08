@@ -1,0 +1,19 @@
+package concretes;
+
+import abstracts.CustomerCheckService;
+import entities.Customer;
+
+public class CustomerCheckManager implements CustomerCheckService{
+
+	@Override
+	public boolean CheckIfRealPerson(Customer customer) {
+		
+		if(customer.getPassword()!=null) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+}
