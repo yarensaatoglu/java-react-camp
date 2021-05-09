@@ -7,9 +7,9 @@ import eCommerce.googleLogin.GoogleLoginManager;
 public class GoogleLoginManagerAdapter implements GoogleService{
 
 	@Override
-	public void googleLoginToSystem(User user) {
+	public void googleLoginToSystem(String email,String password) {
 		GoogleLoginManager manager = new GoogleLoginManager();
-		manager.add(user);	
+		manager.add(email, password);	
 	}
 
 }

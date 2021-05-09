@@ -4,5 +4,5 @@ import eCommerce.entities.concretes.User;
 
 public interface GoogleService {
 
-	void googleLoginToSystem(User user);
+	void googleLoginToSystem(String email,String password);
 }
